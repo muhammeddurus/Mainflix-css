@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lightbox.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen" />
+  <script src="https://kit.fontawesome.com/d0a247cd31.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Document</title>
+  <style>
+    #iconset {
+      color: white;
+      margin-bottom: 0px;
+      margin: 13px;
+    }
+    #settings{
+      background-color: white;
+      text-align: center;
+    }
+#web-bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url(../test/images/mainflix1.jpg);
+}
+
+   
+
+.mb-4 {
+    color:white;
+}
+card-body{
+    color:white;
+}
+mb-2 {
+    color: white;
+}
+.ui-w-80 {
+    width: 80px !important;
+    height: auto;
+}
+
+.btn-default {
+    border-color: rgba(24,28,33,0.1);
+    background: rgba(0,0,0,0);
+    color: #4E5155;
+}
+label {
+    color: white;
+    opacity: 100%;
+}
+
+label.btn {
+    margin-bottom: 0;
+    opacity:100%;
+
+}
+
+.btn-outline-primary {
+    border-color: #26B4FF;
+    background: transparent;
+    color: #26B4FF;
+}
+
+.btn {
+    cursor: pointer;
+    color:white;
+    
+}
+
+
+.text-light {
+    color: #babbbc !important;
+    
+}
+
+.btn-facebook {
+    border-color: rgba(0,0,0,0);
+    background: #3B5998;
+    color: #fff;
+}
+
+.btn-instagram {
+    border-color: rgba(0,0,0,0);
+    background: #000;
+    color: #fff;
+}
+
+.card {
+    background-clip: padding-box;
+    box-shadow: 0 1px 4px rgba(24,28,33,0.012);
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important;
+}
+
+.account-settings-multiselect ~ .select2-container {
+    width: 100% !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+    .light-style .account-settings-links .list-group-item.active {
+        color: #4e5155 !important;
+    }
+
+.material-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+    .material-style .account-settings-links .list-group-item.active {
+        color: #4e5155 !important;
+    }
+
+.dark-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+    .dark-style .account-settings-links .list-group-item.active {
+        color: #fff !important;
+    }
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4E5155 !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24,28,33,0.03) !important;
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- <h1>NETFLIX</h1> -->
+  <div class="wrap">
+    <div class="pages-top" style="padding: 2% 0;">
+      <div class="logo">
+        <a href="main.html"><img src="images/logo4.png" alt="" /></a>
+
+      </div>
+      <div class="turAdi">
+        <h1 id="tur" style="color: white;">Aksiyon Dizileri</h1>
+      </div>
+      <div class="h_menu4">
+        <!-- start h_menu4 -->
+
+        <a class="toggleMenu" href="#">Menu</a>
+        <ul class="nav" style="text-decoration: none;">
+          <li style="text-decoration: none;"><a style="text-decoration: none;" href="main.html">Anasayfa</a></li>
+          <li><a style="text-decoration: none;" href="action2.html">Dizi</a>
+            <ul>
+              <li><a style="text-decoration: none;" href="action2.html">Aksiyon</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Macera</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Korku</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Aksiyon</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Macera</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Korku</a></li>
+            </ul>
+          </li>
+          <li><a style="text-decoration: none;" href="action2.html">Film</a>
+            <ul>
+              <li><a style="text-decoration: none;" href="action2.html">Aksiyon</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Macera</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Korku</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Aksiyon</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Macera</a></li>
+              <li><a style="text-decoration: none;" href="action2.html">Korku</a></li>
+            </ul>
+          </li>
+          <li class="active"><a style="text-decoration: none;" href="main.html">Blog</a></li>
+          <li><a style="text-decoration: none;" href="main.html">Portfolio</a>
+            <!-- <ul>
+                                <li><a href="portfolio.html">Dropdown</a></li>
+                                <li><a href="portfolio.html">Structure</a></li>
+                                <li><a href="portfolio.html">People</a></li>
+                            </ul> -->
+          </li>
+          <li><i id="iconset"class="fa-solid fa-sliders"></i>
+            <ul>
+              <div id="settings">
+                <h2 style="font-size: 1.4em;">Main Development Team</h2>
+              </div>
+              
+              <li><a href="settings1.html">Hesap Bilgilerim</a></li>
+              <li><a href="settings1.html">Beğendiklerim</a></li>
+              <li><a href="settings1.html">Ayarlar</a></li>
+              <li><a href="settings1.html">Kayıtlı Kartlarım</a></li>
+              <li><a href="settings1.html">İletişim</a></li>
+              <li><a href="homepage.html">Oturumu Kapat</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <script type="text/javascript" src="js/nav.js"></script>
+      </div><!-- end h_menu4 -->
+      <div class="clear"></div>
+    </div><!-- end header_main4 -->
+  </div>
+  <div class="container light-style flex-grow-1 container-p-y" style="background-color:black;
+  opacity:95%;">
+
+    <h4 class="font-weight-bold py-3 mb-4">
+        Hesap Ayarları
+    </h4>
+
+    <div class="card overflow-hidden" style="background-color:black;
+    opacity:95%;">
+        <div class="row no-gutters row-bordered row-border-light" style="background-color:black;
+        opacity:95%;">
+            <div class="col-md-3 pt-0" style="background-color:black;
+            opacity:95%;">
+                <div class="list-group list-group-flush account-settings-links" style="background-color:black; color:whitesmoke">
+                    <a style="background-color:black; color:whitesmoke" class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">Genel</a>
+                    <a style="background-color:black; color:whitesmoke" class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Parola Değiştir</a>
+                    <a style="background-color:black; color:whitesmoke" class="list-group-item list-group-item-action" data-toggle="list" href="#account-info">Bilgi</a>
+                    <a style="background-color:black; color:whitesmoke" class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links">Sosyal Medya Linkleri</a>
+                    <a style="background-color:black; color:whitesmoke" class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Bağlantılar</a>
+                    <a style="background-color:black; color:whitesmoke" class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Bildirimler</a>
+                </div>
+            </div>
+            <div class="col-md-9" style="background-color:black;
+            opacity:95%;">
+                <div class="tab-content" style="background-color:black;
+                opacity:95%;">
+                    <div class="tab-pane fade active show" id="account-general" style="background-color:black;
+                    opacity:95%;">
+
+                        <div class="card-body media align-items-center" style="background-color:black;
+                        opacity:95%;">
+                            <img src="/images/none.jpg" alt="" class="d-block ui-w-80">
+                            <div class="media-body ml-4" style="background-color:black;
+                            opacity:95%;">
+                                <label class="btn btn-outline-primary">
+                                    Yeni fotoğraf yükle
+                                    <input type="file" class="account-settings-fileinput">
+                                </label> &nbsp;
+                                <button type="button" class="btn btn-default md-btn-flat">Reset</button>
+
+                                <div class="text-light small mt-1" style="background-color:black;
+                                opacity:95%;">Allowed JPG, GIF or PNG. Max size of 800K</div>
+                            </div>
+                        </div>
+                        <hr class="border-light m-0">
+
+                        <div class="card-body" style="background-color:black;
+                        opacity:95%;">
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Kullanıcı Adı</label>
+                                <input type="text" class="form-control mb-1" value="nmaxwell">
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">İsim</label>
+                                <input type="text" class="form-control" value="Nelle Maxwell">
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">E-mail</label>
+                                <input type="text" class="form-control mb-1" value="nmaxwell@mail.com">
+                                <div class="alert alert-warning mt-3" style="background-color:black;
+                                opacity:95%;">
+                                    E-postanız onaylanmadı. Lütfen gelen kutunuzu kontrol edin.<br>
+                                    <a href="javascript:void(0)">Doğrulamayı tekrar gönder</a>
+                                </div>
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Şirket</label>
+                                <input type="text" class="form-control" value="Company Ltd.">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="account-change-password" style="background-color:black;
+                    opacity:95%;">
+                        <div class="card-body pb-2" style="background-color:black;
+                        opacity:95%;">
+
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Mevcut Şifre</label>
+                                <input type="password" class="form-control">
+                            </div>
+
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Yeni şifre</label>
+                                <input type="password" class="form-control">
+                            </div>
+
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Yeni şifreyi tekrar girin</label>
+                                <input type="password" class="form-control">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="account-info" style="background-color:black;
+                    opacity:95%;">
+                        <div class="card-body pb-2" style="background-color:black;
+                        opacity:95%;">
+
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Biyografi</label>
+                                <textarea class="form-control" rows="5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nunc arcu, dignissim sit amet sollicitudin iaculis, vehicula id urna. Sed luctus urna nunc. Donec fermentum, magna sit amet rutrum pretium, turpis dolor molestie diam, ut lacinia diam risus eleifend sapien. Curabitur ac nibh nulla. Maecenas nec augue placerat, viverra tellus non, pulvinar risus.</textarea>
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Doğum Tarihi</label>
+                                <input type="text" class="form-control" value="May 3, 1995">
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Ülke</label>
+                                <select class="custom-select">
+                                    <option>USA</option>
+                                    <option selected="">Canada</option>
+                                    <option>UK</option>
+                                    <option>Germany</option>
+                                    <option>France</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+                        <hr class="border-light m-0">
+                        <div class="card-body pb-2" style="background-color:black;
+                        opacity:95%;">
+
+                            <h6 class="mb-4">İletişim</h6>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Telefon</label>
+                                <input type="text" class="form-control" value="+0 (123) 456 7891">
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Website</label>
+                                <input type="text" class="form-control" value="">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="account-social-links" style="background-color:black;
+                    opacity:95%;">
+                        <div class="card-body pb-2" style="background-color:black;
+                        opacity:95%;">
+
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Twitter</label>
+                                <input type="text" class="form-control" value="https://twitter.com/user">
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Facebook</label>
+                                <input type="text" class="form-control" value="https://www.facebook.com/user">
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Google+</label>
+                                <input type="text" class="form-control" value="">
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">LinkedIn</label>
+                                <input type="text" class="form-control" value="">
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="form-label">Instagram</label>
+                                <input type="text" class="form-control" value="https://www.instagram.com/user">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="account-connections" style="background-color:black;
+                    opacity:95%;">
+                        <div class="card-body" style="background-color:black;
+                        opacity:95%;">
+                            <button type="button" class="btn btn-twitter">Twitter a <strong>bağlan.</strong></button>
+                        </div>
+                        <hr class="border-light m-0">
+                        <div class="card-body" style="background-color:black;
+                        opacity:95%;">
+                            <h5 class="mb-2" style="color:white">
+                                <a href="javascript:void(0)" class="float-right text-muted text-tiny"><i class="ion ion-md-close"></i> Remove</a>
+                                <i class="ion ion-logo-google text-google"></i>
+                                Google'a bağlısınız:
+                            </h5>
+                            nmaxwell@mail.com
+                        </div>
+                        <hr class="border-light m-0">
+                        <div class="card-body" style="background-color:black;
+                        opacity:95%;">
+                            <button type="button" class="btn btn-facebook">Facebook a<strong>bağlan.</strong></button>
+                        </div>
+                        <hr class="border-light m-0">
+                        <div class="card-body" style="background-color:black;
+                        opacity:95%;">
+                            <button type="button" class="btn btn-instagram">Instagram a <strong>bağlan.</strong></button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="account-notifications" style="background-color:black;
+                    opacity:95%;">
+                        <div class="card-body pb-2" style="background-color:black;
+                        opacity:95%;">
+
+                            <h6 class="mb-4">Aktivite</h6>
+
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input" checked="">
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Email me when someone comments on my article</span>
+                                </label>
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input" checked="">
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Email me when someone answers on my forum thread</span>
+                                </label>
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input">
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Email me when someone follows me</span>
+                                </label>
+                            </div>
+                        </div>
+                        <hr class="border-light m-0">
+                        <div class="card-body pb-2" style="background-color:black;
+                        opacity:95%;">
+
+                            <h6 class="mb-4">Application</h6>
+
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input" checked="">
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">News and announcements</span>
+                                </label>
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input">
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Weekly product updates</span>
+                                </label>
+                            </div>
+                            <div class="form-group" style="background-color:black;
+                            opacity:95%;">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input" checked="">
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Weekly blog digest</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-right mt-3">
+        <button type="button" style=" margin-bottom:25px;" class="btn btn-primary">Değişiklikleri Kaydet</button>&nbsp;
+        <button type="button" style=" margin-bottom:25px;" class="btn btn-default">Kapat</button>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+</script>
+  <div class="end">
+    <h2>
+      © 2022 MainFlix is powered by Main Technology Tüm Hakları Saklıdır.
+    </h2>
+    <h2>
+    </h2>
+  </div>
+</body>
+
+</html>

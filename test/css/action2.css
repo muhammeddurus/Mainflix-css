@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+/* body {
+  background: #e2e2e2;
+  width: 98%;
+  height: 100vh;
+} */
+
+.moviescard{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+}
+body .card {
+  width: 400px;
+  background: transparent;
+  margin-left: 50px ;
+  margin-top: 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+
+}
+body .card_left1 {
+    width: 40%;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+    background: transparent;
+    box-shadow: 10px -5px rgb(110 110 110 / 37%);
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/h8fnwL1.png");
+    background-size: cover;
+    transition: 1s all;
+}
+body .card_left2 {
+  width: 40%;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 10px -5px rgb(110 110 110 / 37%);
+  background-image: url("https://tr.web.img4.acsta.net/pictures/21/11/17/15/20/4944520.jpg");
+  background-size: cover;
+  transition: 1s all;
+}
+body .card_left3 {
+  width: 40%;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 10px -5px rgb(110 110 110 / 37%);
+  background-image: url("https://upload.wikimedia.org/wikipedia/tr/9/9e/Mafya_Babas%C4%B1_film_posteri1.jpg");
+  background-size: cover;
+  transition: 1s all;
+}
+body .card_left4 {
+  width: 40%;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 10px -5px rgb(110 110 110 / 37%);
+  background-image: url("https://upload.wikimedia.org/wikipedia/tr/8/89/The_Walking_Dead_2_sezon_afi%C5%9Fi.jpg");
+  background-size: cover;
+  transition: 1s all;
+}
+body .card_left5 {
+  width: 40%;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 10px -5px rgb(110 110 110 / 37%);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/h8fnwL1.png");
+  background-size: cover;
+  transition: 1s all;
+}
+body .card_left6 {
+  width: 40%;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 10px -5px rgb(110 110 110 / 37%);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/h8fnwL1.png");
+  background-size: cover;
+  transition: 1s all;
+}
+body .card_left7 {
+  width: 40%;
+  height: 250px;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 10px -5px rgb(110 110 110 / 37%);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/h8fnwL1.png");
+  background-size: cover;
+  transition: 1s all;
+}
+body .card_left1 img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    position: relative;
+    transition: 1s all;
+    object-fit:cover;
+}
+body .card_left2 img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  position: relative;
+  transition: 1s all;
+  object-fit:cover;
+}
+body .card_left3 img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  position: relative;
+  transition: 1s all;
+  object-fit:cover;
+}
+body .card_left4 img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  position: relative;
+  transition: 1s all;
+  object-fit:cover;
+}
+body .card_left5 img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  position: relative;
+  transition: 1s all;
+  object-fit:cover;
+}
+body .card_left6 img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  position: relative;
+  transition: 1s all;
+  object-fit:cover;
+}
+body .card_left7 img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  position: relative;
+  transition: 1s all;
+  object-fit:cover;
+}
+
+
+body .card:hover img{
+  transform: translate3d(-250px,0,0);
+}
+/* body .card_left4 img:hover{
+  transform: translate3d(-100px,0,0);
+}
+body .card_left5 img:hover{
+  transform: translate3d(-100px,0,0);
+}
+body .card_left6 img:hover{
+  transform: translate3d(-100px,0,0);
+}
+body .card_left7 img:hover{
+  transform: translate3d(-100px,0,0);
+}*/
+body .card_left1:hover{
+  transform: scale(1.3);
+}
+body .card_left2:hover{
+  transform: scale(1.3);
+}
+body .card_left3:hover{
+  transform: scale(1.3);
+}
+body .card_left4:hover{
+  transform: scale(1.3);
+}
+body .card_left5:hover{
+  transform: scale(1.3);
+}
+body .card_left6:hover{
+  transform: scale(1.3);
+}
+body .card_left7:hover{
+  transform: scale(1.3);
+} 
+body .card_right {
+    width: 60%;
+    float: left;
+    background: #000000;
+    height: 250px;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    box-shadow: 10px -5px rgb(110 110 110 / 37%);
+}
+body .card_right h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    margin: 14px 0 0 0;
+    padding: 0 0 0 25%;
+    letter-spacing: 1px;
+}
+body .card_right__details ul {
+    list-style-type: none;
+    padding: 0px 0 0 4px;
+    margin: 10px 0 0 0;
+}
+body .card_right__details ul li {
+    display: inline;
+    color: #e3e3e3;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 0px 15px 0px 28px;
+}
+body .card_right__rating__stars {
+  position: relative;
+  right: 160px;
+  margin: 10px 0 10px 0;
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  /* hover previous stars in list */
+}
+body .card_right__rating__stars fieldset, body .card_right__rating__stars label {
+  margin: 0;
+  padding: 0;
+}
+body .card_right__rating__stars .rating {
+  border: none;
+}
+body .card_right__rating__stars .rating > input {
+  display: none;
+}
+body .card_right__rating__stars .rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  display: inline-block;
+  content: "";
+  font-family: FontAwesome;
+}
+body .card_right__rating__stars .rating > .half:before {
+  content: "";
+  position: absolute;
+}
+body .card_right__rating__stars .rating > label {
+  color: #ddd;
+  float: right;
+}
+body .card_right__rating__stars .rating > input:checked ~ label,
+body .card_right__rating__stars .rating:not(:checked) > label:hover,
+body .card_right__rating__stars .rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+body .card_right__rating__stars .rating > input:checked + label:hover,
+body .card_right__rating__stars .rating > input:checked ~ label:hover,
+body .card_right__rating__stars .rating > label:hover ~ input:checked ~ label,
+body .card_right__rating__stars .rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+body .card_right__review p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    padding: 0 40px 0 40px;
+    letter-spacing: 1px;
+    margin: 10px 0 10px 0;
+    line-height: 20px;
+}
+body .card_right__review a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    padding: 0 0 0 40px;
+    color: #ffda00;
+    margin: 0;
+}
+body .card_right__button {
+  padding: 0 0 0 40px;
+  margin: 30px 0 0 0;
+}
+body .card_right__button a {
+    color: #ffda00;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #ffda00;
+    padding: 10px 5px 10px 30px;
+    font-size: 8px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 7% 50%;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+body .card_right__button a:hover {
+  color: #000000;
+  background-color: #ffda00;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 768px) {
+    body .card {
+        width: 100%;
+        margin-left: 0px;
+      }
+}
